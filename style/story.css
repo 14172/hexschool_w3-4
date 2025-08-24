@@ -1,28 +1,28 @@
 .hero-banner {
   background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true');
-  background-size: cover;            /* 讓圖片覆蓋整個區塊 */
-  background-position: center;       /* 圖片置中 */
-  background-repeat: no-repeat;      /* 不重複平鋪 */
-  min-height: 302px;   
-margin-bottom: 64px;
-
+  background-size: cover; /* 讓圖片覆蓋整個區塊 */
+  background-position: center; /* 圖片置中 */
+  background-repeat: no-repeat; /* 不重複平鋪 */
+  min-height: 302px;
+  margin-bottom: 64px;
 }
 /* 手機版圖 */
 @media (max-width: 767.98px) {
   .hero-banner {
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true');
     min-height: 200px; /* 可依需求調整小圖高度 */
+  }
 }
+.quote {
+  background-color: var(--primary-100);
 }
-.quote{
-    background-color: var(--primary-100);}
 
 .quote h3 {
-    color: var(--primary-400);
+  color: var(--primary-400);
 }
 .quote p {
-    line-height: 1.5;
-      all: unset; /* 取消所有繼承與 Bootstrap 樣式 */
+  line-height: 1.5;
+  all: unset; /* 取消所有繼承與 Bootstrap 樣式 */
   display: block; /* 重新定義必要的區塊屬性 */
 }
 
@@ -32,17 +32,17 @@ margin-bottom: 64px;
   margin-right: -110px;
 }
 .time {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 .slogan {
-    color: var(--primary-400);
+  color: var(--primary-400);
 }
 .link {
-    color: var(--primary-400);
-    font-weight: 500;
-    text-underline-offset: 6px;
+  color: var(--primary-400);
+  font-weight: 500;
+  text-underline-offset: 6px;
 }
 .brand-principle {
-    padding-left: 12px;
-    border-left: 3px solid var(--neutral-300) ;
+  padding-left: 12px;
+  border-left: 3px solid var(--neutral-300);
 }

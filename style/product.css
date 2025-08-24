@@ -1,36 +1,36 @@
 .product-infor {
-    display: flex;
-    flex-wrap: wrap; /* 允許換行 */
-    gap: 16px; /* 項目間距，可依需求調整 */
+  display: flex;
+  flex-wrap: wrap; /* 允許換行 */
+  gap: 16px; /* 項目間距，可依需求調整 */
 }
 
 .product-infor li {
-    flex: 1 1 calc(50% - 16px); /* 手機版兩欄，桌面可改為更小比例 */
+  flex: 1 1 calc(50% - 16px); /* 手機版兩欄，桌面可改為更小比例 */
 }
 
 @media (min-width: 768px) {
-    .product-infor li {
-        flex: 1 1 100%; /* 桌面版一列一個 */
-    }
+  .product-infor li {
+    flex: 1 1 100%; /* 桌面版一列一個 */
+  }
 }
 
 /* 按鈕容器 */
 .btn-product-size-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 /* 桌面版維持原本尺寸 */
 .btn-product-size-group .btn-product-size {
-    flex: 0 0 auto; 
+  flex: 0 0 auto;
 }
 
 /* 手機板兩個按鈕一列 */
 @media (max-width: 767.98px) {
-    .btn-product-size-group .btn-product-size {
-        flex: 0 0 calc(50% - 8px); /* 一列兩個按鈕 */
-    }
+  .btn-product-size-group .btn-product-size {
+    flex: 0 0 calc(50% - 8px); /* 一列兩個按鈕 */
+  }
 }
 
 /* 產品描述 */
@@ -64,7 +64,7 @@
   border: 1px solid var(--neutral-900);
   width: 160px;
   font-weight: 700;
-}product-col 
+}
 /* disabled 按鈕樣式 */
 .btn-product-size:disabled {
   border-color: var(--neutral-300);
@@ -93,13 +93,13 @@
   border-bottom: 1px solid var(--neutral-300);
 }
 .product-infor li {
-    list-style: none;
+  list-style: none;
   padding-left: 0; /* 預設會有縮排，這裡順便清掉 */
 }
 .ProductList a {
-text-decoration: none;
+  text-decoration: none;
   color: var(--primary-900);
 }
 .ProductList a:hover {
-color: var(--primary-400);
+  color: var(--primary-400);
 }
