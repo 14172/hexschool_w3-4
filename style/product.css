@@ -1,0 +1,105 @@
+.product-infor {
+    display: flex;
+    flex-wrap: wrap; /* 允許換行 */
+    gap: 16px; /* 項目間距，可依需求調整 */
+}
+
+.product-infor li {
+    flex: 1 1 calc(50% - 16px); /* 手機版兩欄，桌面可改為更小比例 */
+}
+
+@media (min-width: 768px) {
+    .product-infor li {
+        flex: 1 1 100%; /* 桌面版一列一個 */
+    }
+}
+
+/* 按鈕容器 */
+.btn-product-size-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; 
+}
+
+/* 桌面版維持原本尺寸 */
+.btn-product-size-group .btn-product-size {
+    flex: 0 0 auto; 
+}
+
+/* 手機板兩個按鈕一列 */
+@media (max-width: 767.98px) {
+    .btn-product-size-group .btn-product-size {
+        flex: 0 0 calc(50% - 8px); /* 一列兩個按鈕 */
+    }
+}
+
+/* 產品描述 */
+.h5 {
+  color: var(--primary-400);
+}
+.del-price {
+  color: var(--neutral-500);
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 8px;
+}
+/* 產品顏色 */
+.product-color {
+  width: 64px;
+  text-align: center;
+  color: var(--neutral-600);
+}
+.product-color img:hover {
+  border-color: var(--neutral-900);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* 可選，增加陰影效果 */
+  cursor: pointer;
+}
+/* 產品尺寸 */
+.btn-product-size {
+  border: 1px solid var(--neutral-300);
+  width: 160px;
+}
+.btn-product-size:hover {
+  background-color: var(--neutral-100);
+  border: 1px solid var(--neutral-900);
+  width: 160px;
+  font-weight: 700;
+}product-col 
+/* disabled 按鈕樣式 */
+.btn-product-size:disabled {
+  border-color: var(--neutral-300);
+  background-color: var(--primary-0);
+  cursor: not-allowed;
+}
+/* 收藏試穿 */
+.product-action {
+  display: flex;
+  gap: 8px;
+}
+.product-action .btn {
+  width: 50%;
+}
+.product-action .bi {
+  padding-right: 8px;
+}
+/* 產品資訊 */
+.product-info-title {
+  font-weight: 500;
+}
+.product-info-item p {
+  color: var(--neutral-600);
+}
+.section-lined {
+  border-bottom: 1px solid var(--neutral-300);
+}
+.product-infor li {
+    list-style: none;
+  padding-left: 0; /* 預設會有縮排，這裡順便清掉 */
+}
+.ProductList a {
+text-decoration: none;
+  color: var(--primary-900);
+}
+.ProductList a:hover {
+color: var(--primary-400);
+}

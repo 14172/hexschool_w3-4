@@ -1,0 +1,46 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.category { 
+  list-style: none; 
+  padding-left: 0; 
+  margin: 0; 
+} 
+
+.col-2 .category { 
+  margin-left: -12px; /* 把 col 的 padding 抵銷掉 */ 
+}
+
+.category a {
+  text-decoration: none;
+  color: var(--primary-900);
+}
+.category a:hover {
+color: var(--primary-400);
+}
+
+.ProductList a {
+text-decoration: none;
+  color: var(--primary-900);
+}
+.ProductList a:hover {
+color: var(--primary-400);
+}
+
+.pagination ul {
+    width: 100%;
+}
+.page-item .btn {
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+.page-item .btn:hover {
+ background-color: var(--primary-300);
+}
+
